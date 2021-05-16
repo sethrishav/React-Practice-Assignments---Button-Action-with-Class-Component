@@ -16,8 +16,9 @@ class App extends Component {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-		<p id="para">{this.state.msg}</p>
+		
 		<button id="click" onClick={this.show}>click</button>
+		<p id="para">{this.state.msg}</p>
     		</div>
     	);
     }
