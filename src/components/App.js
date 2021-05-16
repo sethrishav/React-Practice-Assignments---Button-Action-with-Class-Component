@@ -9,7 +9,7 @@ class App extends Component {
 	};
 	
 	show() {
-	this.setState({msg : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"})
+	this.setState({msg : <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>})
 	}
 
     render() {
@@ -18,7 +18,7 @@ class App extends Component {
 				{ /* Do not remove this main div!! */ }
 		
 		<button id="click" onClick={this.show}>click</button>
-		<p id="para">{this.state.msg}</p>
+		{this.state.msg}
     		</div>
     	);
     }
