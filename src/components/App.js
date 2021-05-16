@@ -5,6 +5,7 @@ class App extends Component {
     constructor(props) {
 		super(props);
 	    this.state={msg : ""}
+	    this.show=this.show.bind(this)
 	};
 	
 	show() {
